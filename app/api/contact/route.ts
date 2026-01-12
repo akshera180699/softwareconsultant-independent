@@ -13,18 +13,17 @@ export async function POST(req: Request) {
     }
 
     const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false,
+      service: "gmail",
       auth: {
-        user: process.env.SMTP_EMAIL,
-        pass: process.env.SMTP_PASSWORD,
+        user: process.env.SMTP_EMAIL!,
+        pass: process.env.SMTP_PASSWORD!,
       },
     });
 
     await transporter.sendMail({
       from: `"Contact Form" <${process.env.SMTP_EMAIL}>`,
-      to: process.env.RECEIVER_EMAIL,
+      to: process.env.RECEIVER_EMAIL!,
+      replyTo: email, // IMPORTANT: reply goes to user
       subject: "New Project Inquiry",
       text: `
 Name: ${name}
@@ -37,7 +36,7 @@ ${message}
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error(error);
+    console.error("SMTP ERROR:", error);
     return NextResponse.json(
       { error: "Failed to send email" },
       { status: 500 }
