@@ -47,7 +47,7 @@ export default function AboutPage() {
         <h1 className="text-3xl font-semibold mb-6 text-white">About</h1>
 
         <p className="text-lg text-gray-400 max-w-3xl mb-4">
-          I operate as an independent full-stack software solutions provider,
+          We operate as an independent full-stack software solutions provider,
           working directly with clients to design, build, and maintain
           production-grade applications.
         </p>

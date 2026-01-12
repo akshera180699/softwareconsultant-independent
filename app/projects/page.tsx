@@ -1,5 +1,20 @@
 const projects = [
   {
+    title: "Mortgage Risk Analysis & Document Intelligence Platform",
+    tech: "ASP.NET, Oracle, DevExpress, AI/LLM",
+    slug: "mortgage-risk-analysis",
+  },
+  {
+    title: "Healthcare Security & Authentication System",
+    tech: "ASP.NET, SQL Server, Logging",
+    slug: "healthcare-security",
+  },
+  {
+    title: "Real-Time Vehicle GPS Tracking System",
+    tech: "ASP.NET (VB.NET), SQL Server, GPS APIs",
+    slug: "gps-tracking",
+  },
+  {
     title: "Claims & EOB Reconciliation Platform",
     tech: "ASP.NET Core, SQL Server, CI/CD",
     slug: "claims-reconciliation",
