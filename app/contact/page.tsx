@@ -22,7 +22,7 @@ export default function ContactPage() {
 
           {/* WhatsApp */}
           <a
-            href={`https://wa.me/${whatsappNumber}?text=Hello%20Akshera,%20I%20would%20like%20to%20discuss%20a%20project.`}
+            href={`https://wa.me/${whatsappNumber}?text=Hi%20Team,%20I%20would%20like%20to%20discuss%20a%20project.`}
             target="_blank"
             className="flex items-center gap-4 border border-gray-800 rounded-xl p-5 hover:border-gray-600 hover:bg-gray-900 transition"
           >
