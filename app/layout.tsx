@@ -30,7 +30,7 @@ export default function RootLayout({
         {/* Footer */}
         <footer className="border-t">
           <div className="max-w-5xl mx-auto px-6 py-4 text-xs text-gray-500">
-            © {new Date().getFullYear()}.Software Engineering Consultant. All rights reserved.
+            © {new Date().getFullYear()}.Software Engineering Consultant. All rights reserved. Delhi, India.
          </div>
        </footer>
 
