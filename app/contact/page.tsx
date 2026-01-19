@@ -1,6 +1,7 @@
 "use client";
 
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+
 
 export default function ContactPage() {
   const whatsappNumber = "919643173854";
@@ -46,6 +47,27 @@ export default function ContactPage() {
           </a>
 
         </div>
+
+        {/* Divider */}
+        <div className="border-t border-gray-800 my-16" />
+
+        {/* Address / Operating Model */}
+        <div className="flex items-start gap-4 text-sm">
+          <MapPin size={18} className="text-gray-400 mt-1" />
+          <div className="space-y-2">
+            <p className="text-white font-medium">
+              Independent Operating Model
+            </p>
+            <p className="text-gray-400 leading-relaxed">
+              Operates as an independent software consultant, delivering services directly
+              without third-party intermediaries or corporate bureaucracy.
+            </p>
+            <p className="text-gray-400">
+              Based in Delhi, India · Working with clients globally (US , Spain)
+            </p>
+          </div>
+        </div>
+
 
       </section>
     </main>
